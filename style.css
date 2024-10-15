@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.nav-left {
+    width: 25vw;
+    margin: 6px 0;
+}
+
+.nav-left img {
+    padding: 8px 20px;
+}
+
+img[alt="logo"] {
+    height: 60px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.nav-right {
+    width: 75vw;
+    justify-content: space-around;
+    margin: 6px 0;
+}
+
+.home-bg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.search input {
+    background-color: #202020;
+    padding: 14px 50px;
+    height: 50px;
+    width: 322px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+
+}
+
+input::placeholder {
+    color: white;
+}
+
+.button button {
+    border: none;
+    cursor: pointer;
+}
+
+.button :last-child {
+    /* color: whitesmoke; */
+    margin-top: 3px;
+    padding: 15px 26px;
+    border-radius: 30px;
+    /* font-size: 15px; */
+    font-weight: 600;
+    color: black;
+    background-color: white;
+}
+
+.button :first-child {
+    background-color: #202020;
+    padding: 15px 26px;
+    border-radius: 20px;
+    font-weight: 500;
+    color: gray;
+}
+
+.button :first-child:hover {
+    font-size: 15px;
+    color: rgb(207, 204, 204);
+}
+
+.left {
+    position: sticky;
+    /* z-index: 4; */
+    top: 60px;
+    width: 25vw;
+    background-color: #131313;
+    height: 89vh;
+}
+
+.right {
+    position: relative;
+    width: 75vw;
+    background-color: #131313;
+}
+
+.right h1 {
+    margin: 20px 0 0 20px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.lib {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lib-content {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 5px 0 0 20px;
+}
+
+.lib-content button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 35px;
+    font-weight: 600;
+    border: none;
+}
+
+.footer {
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 2%;
+}
+
+.footer p {
+    margin: 10px;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: rgb(196, 192, 192);
+}
+
+.artists,
+.albums,
+.radio {
+    margin: 15px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    /* background-color: red; */
+    padding: 0 5px;
+    position: relative;
+    
+}
+.card img{
+    height: 170px;
+    width: 170px;
+}
+
+.card i {
+    position: absolute;
+    background-color: black;
+    border-radius: 100%;
+    font-size: 50px;
+    bottom: 0px;
+    right: 15px;
+    transition: ease-in-out 0.6s;
+    opacity: 0;
+}
+
+.card:hover {
+    background-color: rgba(41, 40, 40, 0.729);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card:hover i {
+    opacity: 1;
+    bottom: 50px;
+}
+
+.card img {
+    height: 170px;
+    border-radius: 100%;
+    margin-top: 5px;
+}
+
+.card :last-child {
+    color: gray;
+    max-width: 150px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.albums .card img {
+    border-radius: 5px;
+}
+
+.radio .card img {
+    border-radius: 5px;
+}
+
+.radio .card :last-child {
+    max-width: 165px;
+    color: rgb(184, 177, 177);
+}
+
+.playbar {
+    background-color: greenyellow;
+    position:sticky;
+    bottom: 0;
+    padding: 5px 0 15px 0;
+    border-radius: 5px;
+}
+
+.progress {
+    position: relative;
+    top: 30px;
+    height: 8px;
+    width: 100%;
+    background-color: ghostwhite;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.progress>div {
+    position: relative;
+    bottom: 3px;
+    left: 0%;
+    height: 13px;
+    width: 13px;
+    border: 2px solid whitesmoke;
+    border-radius: 100%;
+    background-color: white;
+    transition: ease 0.5s;
+}
+
+.icon {
+    margin-left: 30%;
+    width: 40%;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+.icon img {
+    cursor: pointer;
+    /* margin-bottom: 8px; */
+    padding: 8px;
+}
+
+.song-card {
+    margin: 19px 16px;
+    font-size: 14px;
+    max-height: 55vh;
+    overflow: auto;
+}
+
+.song-card li {
+    list-style: number;
+    background-color: #202020;
+    border: 2px solid whitesmoke;
+    margin: 14px 1px;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.song-card li i{
+ font-size: 20px;   
+ margin: 0 1px;
+}
+
+.song-duration {
+    position: relative;
+    bottom: 30px;
+    align-items: end;
+    margin: 0px 20px;
+    justify-content: space-between;
+}
+.song-duration :first-child{
+    margin-top: 4px;
+}
+
+.humburger {
+    display: none;
+}
+
+.cross {
+    display: none;
+}
+.range{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    gap: 10px;
+}
+.range img{
+    cursor: pointer;
+}
+.range input{
+    width: 100px;
+    cursor: pointer;
+}
+
+@media (max-width:920px) {
+    .left {
+        position: fixed;
+        left: -110%;
+        width: 31vw;
+        z-index: 1;
+        background-color: black;
+        border: 1px solid white;
+        transition: ease-in-out 0.5s;
+
+    }
+
+    .right {
+        width: 100vw;
+    }
+    .right h1{
+        margin-bottom: 30px;
+    }
+    .button :first-child{
+        padding: 12px 18px;
+    }
+    .button :last-child{
+        padding: 12px 18px;
+    }
+    .humburger {
+        display: inline-block;
+        height: 50px;
+        margin-bottom: 4px;
+    }
+
+    .cross {
+        height: 50px;
+        margin-bottom: 4px;
+    }
+    img[alt="logo"] {
+        height: 52px;
+        margin-left: -28px;
+    }
+    .icon img{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:706px){
+    .button{
+        display: none;
+    }
+    .search input {
+        padding: 10px 20px;
+        height: 45px;
+        width: 332px;
+    }
+    .nav-right{
+        justify-content: space-evenly;
+    }
+}
+/* for mobile phones */
+@media (max-width:430px) {
+    .left {
+        width: 95vw;
+    }
+
+    .home-bg {
+        display: none;
+    }
+
+    .nav-left {
+        width: 35vw;
+    }
+
+    .nav-right {
+        width: 65vw;
+        justify-content: flex-start;
+    }
+
+    img[alt="logo"] {
+        height: 52px;
+        margin-left: -28px;
+    }
+
+    .artists,
+    .albums,
+    .radio {
+        justify-content: space-around;
+        margin: 1px;
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .playbar{
+        height: 20vh;
+        width: 96vw;
+    }
+    .progress {
+        top: 30px;
+    }
+
+    .song-duration {
+        margin: 0 9px;
+    }
+
+    .icon img {
+        margin-bottom: 15px;
+    }
+
+    .search input {
+        margin-top: 5px;
+        padding: 10px 20px;
+        height: 40px;
+        width: 222px;
+    }
+    .time{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:360px){
+    img[alt="logo"]{
+        display: none;
+    }   
+
+   .card img{
+    height: 250px;
+    width: 230px;
+   }
+   .nav-left{
+    width: 20vw;
+   }
+   .nav-right{
+    width: 80vw;
+    justify-content: flex-start;
+   }
+   .card{
+    margin-bottom: 30px;
+   }
+}
+

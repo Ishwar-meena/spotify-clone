@@ -1,0 +1,66 @@
+ .border {
+    border: 2px solid red;
+}
+.flex{
+    display: flex;
+}
+.sticky{
+    top: 0;
+    position: sticky;
+    z-index: 1;
+    background-color: black;
+}
+
+
+.img-height{
+    height: 30px;
+}
+.invert{
+    filter: invert(1);
+}
+.bg-color{
+    background-color: #202020;
+}
+.m-top{
+    margin-top: 15px;
+}
+.m-left{
+    margin-left: 8px;
+}
+.margin{
+    margin: 5px 5px 5px 10px;
+    border-radius: 10px;
+}
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #333; /* Firefox: thumb, track */
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px; /* Also handles horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #333; /* Dark grey background for the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Darker grey for the scrollbar handle */
+    border-radius: 10px; /*Rounded scrollbar edges*/
+    border: 2px solid #333; /* Adds padding inside the scrollbar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Lighter grey on hover */
+}
+
+/* Ensure the scrollbar is visible on overflow */
+.scrollable {
+    height:400px; /* Set a height to create a scrollbar for the example */
+    overflow-y: scroll; /* Force vertical scrolling */
+    overflow-x: scroll; /* Force horizontal scrolling */
+    padding: 20px;
+    border: 1px solid #555;
+    margin: 20px 0;
+} 

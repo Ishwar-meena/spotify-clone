@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="shortcut icon" href="Assets/svgImages/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="flex sticky">
+        <div class="nav-left ">
+            <img src="Assets/svgImages/humburger.svg" alt="humburger" class="invert humburger">
+            <img src="Assets/svgImages/cross.svg" alt="cross" class="invert cross">
+            <img src="Assets/svgImages/logo.svg" alt="logo" class="invert">
+        </div>
+        <div class="nav-right flex">
+            <div class="bg-color home-bg">
+                <img src="Assets/svgImages/home.svg" alt="home" class="img-height invert " title="Home">
+            </div>
+            <div class="search">
+                <input type="text" placeholder="What do you want to play?">
+            </div>
+            <div class="button">
+                <button>Sign up</button>
+                <button>Log in</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container flex">
+        <div class="left margin">
+            <div class="lib flex m-top">
+                <img src="Assets/svgImages/library.svg" alt="library" class="img-height invert ">
+                <p>Your Library</p>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="lib-content">
+                <!-- <h4>Create your first playlist</h4>
+                <p class="m-top">It's easy,we'll help you</p>
+                <button>Create playlist</button> -->
+            </div>
+            <div class="song-card">
+                <ul id="song-name"></ul>
+            </div>
+            <div class="footer flex">
+                <p>Legal</p>
+                <p>Saftey&Privacy center</p>
+                <p>Privacy policy</p>
+                <p>cookies</p>
+                <p>about ads</p>
+                <p>accessbility</p>
+                <p>cookies</p>
+            </div>
+        </div>
+        <div class="right margin">
+            <h1>Popular albums</h1>
+            <div class="albums flex">
+                <!-- <div data-folder="bhajan" class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88" alt="">
+                    <i class="fa-solid fa-circle-play" style="color: #74ec8c;"></i>
+                    <p>Glory</p>
+                    <p>Yo Yo Honey Singh</p>
+                </div> -->
+            </div>
+            <div class="playbar">
+                <div class="play-icons">
+                    <div class="icon flex">
+                        <img src="Assets/svgImages/previous.svg" id="previous" class="invert">
+                        <img src="Assets/svgImages/play.svg" id="play" class="invert">
+                        <img src="Assets/svgImages/next.svg" id="next" class="invert">
+                    </div>
+                </div>
+                <div class="progress">
+                    <div></div>
+                </div>
+                <div class="song-duration flex">
+                    <div class="song-name-playbar"></div>
+                    <div class="time">00:00/00:00</div>
+                </div>
+                <div class="range flex">
+                    <img src="Assets/svgImages/volume.svg" alt="volume" class="invert">
+                    <input type="range" id="volume">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
