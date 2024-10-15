@@ -15,13 +15,13 @@
 ## 📸 Screenshots of the App
 
 ### 1. Desktop Screen
-![Desktop](assets/svgImages/screenshot//desktop.png)
+![Desktop](Assets/svgImages/screenshot/desktop.png)
 
 ### 2. Tab Screen
-![tablet](assets/svgImages/screenshot/tablet.png)
+![tablet](Assets/svgImages/screenshot/tablet.png)
 
 ### 3. Mobile Player
-![mobile](assets/svgImages/screenshot/mobile.png)
+![mobile](Assets/svgImages/screenshot/mobile.png)
 
 ---
 
